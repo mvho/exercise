@@ -328,3 +328,42 @@ body {
   }
 
 }
+
+@media (min-width: 1200px) {
+  
+  .container {
+    max-width: 1140px;
+  }
+
+  .dropdown-menu li {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  /*
+  .second-hero-col {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 0;
+    max-width: 100%;
+    text-align: start;
+    text-size-adjust: 100%;
+  }
+  */
+
+  .second-hero-col {
+    flex: 0 0 auto;
+    width: 58.3333333%;
+  }
+
+ .hero-row {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .hero-intro {
+  max-width: 450px;
+ }
+
+}
