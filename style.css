@@ -14,6 +14,8 @@ body {
   background-color: #eff2f1;
 }
 
+/* Start of navbar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -94,6 +96,8 @@ body {
   display: none;
 }
 
+/* Start of nav dropdown */
+
 /* */
 .dropdown-menu {
   padding: 0;
@@ -146,7 +150,10 @@ body {
   vertical-align: middle;
 }
 
-/* */
+/* End of nav dropdown */
+
+/* Start of hero section */
+
 .mr-half-rem {
   margin-right: 0.5rem!important;
 }
@@ -188,8 +195,8 @@ body {
 .hero-intro h1 {
   margin: 0;
   margin-bottom: 30px;
-  line-height: 33.42px;
-  font-size: 27.85px;
+  font-size: calc(1.375rem + 1.5vw);
+  line-height: 1.2;
   color: #fff;
 }
 
@@ -248,4 +255,76 @@ body {
   text-align: start;
   text-size-adjust: 100%;
   vertical-align: middle;
+}
+
+/* End of hero section */
+
+/* Width 768+ px */
+
+@media (min-width: 768px) {
+
+  .navbar {
+    display: flex;
+  }
+
+  .furni-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .nav-collapse {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: start;
+    top: auto;
+    right: auto;
+  }
+
+  .dropdown-menu {
+    display: flex;
+  }
+
+  .nav-toggler {
+    display: none;
+  }
+
+  .container {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dropdown-menu, .dropdown-icons {
+    margin-bottom: 0!important;
+  }
+
+  .dropdown-menu {
+    flex-direction: row;
+    margin-left: auto!important;
+  }
+
+  .dropdown-menu li a {
+    padding: 8px;
+  }
+
+  .dropdown-icons {
+    margin-left: 40px!important;
+  }
+
+  .dropdown-icons li {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 0;
+  }
+
+  .dropdown-icons li:first-child {
+    margin-right: 20px!important;
+  }
+
+  .hero {
+    padding-top: 162px;
+    padding-bottom: 192px;
+  }
+
 }
