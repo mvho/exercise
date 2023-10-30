@@ -117,10 +117,6 @@ body {
   opacity: 1;
 }
 
-.active a {
-  border-bottom: solid 5px #F9BF29;
-}
-
 .dropdown-menu li a {
   color: #fff;
   text-decoration: none;
@@ -132,11 +128,6 @@ body {
   text-align: right;
   /*transition: all 0.3s;*/ /*  This should work for the fade-out of the underline after
                                 hovering off the item, but it doesn't work for some reason  */
-}
-
-.dropdown-menu li a:hover{
-  border-bottom: solid 5px #F9BF29;
-  transition: all 0.3s;
 }
 
 .dropdown-menu li:hover {
@@ -283,7 +274,7 @@ body {
   }
 
   .nav-collapse {
-    display: flex;
+    display: flex!important;
     flex-basis: auto;
     flex-grow: 1;
     text-align: start;
@@ -293,6 +284,15 @@ body {
 
   .dropdown-menu {
     display: flex;
+  }
+
+  .active a {
+    border-bottom: solid 5px #F9BF29;
+  }
+
+  .dropdown-menu li a:hover{
+    border-bottom: solid 5px #F9BF29;
+    transition: all 0.3s;
   }
 
   .nav-toggler {
