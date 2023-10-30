@@ -286,13 +286,18 @@ body {
     display: flex;
   }
 
-  .active a {
-    border-bottom: solid 5px #F9BF29;
+  .active {
+    text-decoration-color: #F9BF29;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 12px;
   }
 
   .dropdown-menu li a:hover{
-    border-bottom: solid 5px #F9BF29;
-    transition: all 0.3s;
+    text-decoration-color: #F9BF29;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 12px;
   }
 
   .nav-toggler {
